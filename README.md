@@ -8,7 +8,7 @@ The objective of this repository is to register a commit history for a CRUD Scaf
 
 - Java 11
 - Spring Boot 2.3.9
-- MySQL 2.3.9
+- MySQL 8
 
 **Using the API**:
 
