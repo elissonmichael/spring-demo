@@ -3,6 +3,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.demo.model.Notice;
 import com.example.demo.repo.NoticeRepo;
+import java.util.List;
 
 @Service
 public class NoticeService {
@@ -15,5 +16,9 @@ public class NoticeService {
 
   public Notice addNotice(Notice notice) {
     return noticeRepo.save(notice);
+  }
+
+  public List<Notice> findAllNotices () {
+    return noticeRepo.findAll();
   }
 }
