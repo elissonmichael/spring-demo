@@ -28,4 +28,4 @@ Open Insomnia, Postman or Similar and test the following routes on the endpoint 
 
 ![Insomnia Example](/insomnia.png)
 
-Check the [commits history](https://poseidon.les.inf.puc-rio.br/elisson/spring-crud/commits/master) for more detailed information.
+Check the [commits history](https://github.com/elissonmichael/spring-demo/commits/master) for more detailed information.
