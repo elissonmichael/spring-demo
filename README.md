@@ -6,8 +6,9 @@ The objective of this repository is to register a commit history for a CRUD Scaf
 
 **Requirements**:
 
-- Java 11.0.2
+- Java 16
 - Spring Boot 2.3.9
+- Maven 3.8.1
 - PostgreSQL 12.6
 
 **Using the API**:
