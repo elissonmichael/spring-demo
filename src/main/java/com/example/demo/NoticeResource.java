@@ -27,7 +27,7 @@ public class NoticeResource {
     return new ResponseEntity<>(notices, HttpStatus.OK);
   }
 
-  @CrossOrigin(origins = "https://next-js-demo-sigma.vercel.app/")
+  @CrossOrigin(origins = "https://next-js-demo-sigma.vercel.app")
   @PostMapping
   public ResponseEntity<Notice> addNotice(@RequestBody Notice notice) {
     Notice newNotice = noticeService.addNotice(notice);
