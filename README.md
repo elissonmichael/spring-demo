@@ -23,7 +23,8 @@ Open Insomnia, Postman or Similar and test the following routes on the endpoint 
 
 | Route         | Method | Params (JSON)
 | --------------| -------| ------------- |
-| /notices      | GET    |                                   |
+| /notices      | GET    |               |
+| /notices/id   | GET    |               |
 | /notices      | POST   | { "title": "Sample Notice Title", "description": "Sample Notice Description" } |
 
 ![Insomnia Example](/insomnia.png)
