@@ -26,6 +26,6 @@ public class NoticeService {
 
   public Notice findNoticeById(Long id) {
     return noticeRepo.findById(id)
-                     .orElseThrow(() -> new NoticeNotFoundException("User Not Found"));
+                     .orElseThrow(() -> new NoticeNotFoundException("Notice ID %s not found".formatted(id)));
   }
 }
