@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 import java.util.List;
@@ -38,5 +39,11 @@ public class NoticeResource {
   public ResponseEntity<Notice> addNotice(@RequestBody Notice notice) {
     var newNotice = noticeService.addNotice(notice);
     return new ResponseEntity<>(newNotice, HttpStatus.CREATED);
+  }
+
+  @DeleteMapping("/{id}")
+  public ResponseEntity<?> deleteNotice(@PathVariable("id") Long id) {
+    noticeService.deleteNotice(id);
+    return new ResponseEntity<>(HttpStatus.OK);
   }
 }

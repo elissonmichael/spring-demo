@@ -7,4 +7,6 @@ import com.example.demo.model.Notice;
 public interface NoticeRepo extends JpaRepository<Notice, Long> {
 
   Optional<Notice> findNoticeById(Long id);
+
+  void deleteNoticeById(Long id);
 }
