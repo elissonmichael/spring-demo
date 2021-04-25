@@ -21,11 +21,13 @@ The objective of this repository is to register a commit history for a CRUD Scaf
 
 Open Insomnia, Postman or Similar and test the following routes on the endpoint `localhost:8080`:
 
-| Route         | Method | Params (JSON)
-| --------------| -------| ------------- |
-| /notices      | GET    |               |
-| /notices/id   | GET    |               |
-| /notices      | POST   | { "title": "Sample Notice Title", "description": "Sample Notice Description" } |
+Action  | Route         | Method | Params (JSON)
+--------| --------------| -------| ------------- |
+index   | /notices      | GET    |               |
+show    | /notices/id   | GET    |               |
+update  | /notices/id   | PUT    | { "title": "Sample Notice Title", "description": "Sample Notice Description" } |
+create  | /notices      | POST   | { "title": "Sample Notice Title", "description": "Sample Notice Description" } |
+destroy | /notices/id   | DELETE |               |
 
 ![Insomnia Example](/insomnia.png)
 
