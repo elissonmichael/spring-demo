@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -39,6 +40,12 @@ public class NoticeResource {
   public ResponseEntity<Notice> addNotice(@RequestBody Notice notice) {
     var newNotice = noticeService.addNotice(notice);
     return new ResponseEntity<>(newNotice, HttpStatus.CREATED);
+  }
+
+  @PutMapping("/{id}")
+  public ResponseEntity<Notice> updateNotice(@RequestBody Notice notice) {
+    var updatedNotice = noticeService.updateNotice(notice);
+    return new ResponseEntity<>(updatedNotice, HttpStatus.OK);
   }
 
   @DeleteMapping("/{id}")

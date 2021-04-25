@@ -34,4 +34,8 @@ public class NoticeService {
   public void deleteNotice(Long id) {
     noticeRepo.deleteNoticeById(id);
   }
+
+  public Notice updateNotice(Notice notice) {
+	return noticeRepo.save(notice);
+  }
 }
